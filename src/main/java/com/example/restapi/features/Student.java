@@ -7,6 +7,8 @@ public class Student{
     private String name;
     private Integer age;
     private String email;
+    private String about;
+    private String joining;
 
     // public variable class
     public Student(String id, String name, String email, Integer age){
@@ -16,6 +18,7 @@ public class Student{
         this.email=email;
     }
 
+    // getter and setters
     public String getID(){
         return id;
     }
@@ -40,8 +43,21 @@ public class Student{
     public void setAge(Integer age){
         this.age = age;
     }
+    public String getAbout() {
+        return about;
+    }
+    public void setAbout(String about) {
+        this.about = about;
+    }
+    public String getJoining() {
+        return joining;
+    }
+    public void setJoining(String joining) {
+        this.joining = joining;
+    }
     @Override
-    public String toString(){
-        return "Student: { id->"+id+", name->"+name+", age:"+age+", email:"+email;
+    public String toString() {
+        return "Student: { id->" + id + ", name->" + name + ", age:" + age + ", email:" + email +
+                ", about:" + about + ", joining:" + joining + "}";
     }
 }
